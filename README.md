@@ -1,26 +1,43 @@
-# Olist E-commerce Analysis Analysing 100,000+ real orders from Olist  Brazil's largest e-commerce marketplace (2016–2018). 
-## Business Questions 
-1. Which product categories have the worst delivery delays? 
-2. Does late delivery cause 1-star reviews?
-3. Which states and categories drive the most revenue?
+# Olist E-commerce Analysis
 
-## Key Findings — Week 1
-- **bed_bath_table** leads in order volume (11,115 orders)
-  but **computers_accessories** has nearly double the avg
-  order value (R$158 vs R$83)
-- **92.1% of orders arrive early** — Olist uses conservative
-  delivery estimates (mean = 12 days early)
-- Only **6.6% of orders are late** — but the worst case
-  was 189 days overdue
-- **58,247 reviews** have no written comment — star rating
-  is the only reliable satisfaction metric
+Analysing 100,000+ real orders from Olist — Brazil's largest
+e-commerce marketplace (2016–2018).
+
+## Business Questions — All 3 Answered
+
+**Q1 — Which product categories have the worst delivery delays?**
+audio leads with 11.6% late order rate. christmas_supplies 10.0%.
+health_beauty appears despite being 2nd highest volume category —
+significant absolute number of unhappy customers.
+
+**Q2 — Does late delivery cause 1-star reviews?**
+Yes. 67.5% of orders delayed 5+ days receive 1-star reviews
+(3,064 of 4,541 late orders). Correlation = -0.229 across
+110,005 reviewed orders.
+
+**Q3 — Which states and categories drive most revenue?**
+SP leads with R$5.07M. bed_bath_table leads in order volume
+but computers_accessories earns 2x more per order (R$158 vs R$83).
+
+## Key Findings
+
+- 92.1% of orders arrive early — mean delay = -12 days
+- 67.5% of orders delayed 5+ days get 1-star reviews
+- audio category has highest late rate at 11.6%
+- Credit card dominates payments (73.8%) — avg R$178.93
+- 10-installment orders average R$429 vs R$109 single payment
+- SP generates R$5.07M — nearly 3x second-place RJ
+- BA (Bahia) has highest avg order value at R$134
 
 ## Tools Used
-Python · pandas · matplotlib · SQL · Excel · Power Query
+Python · pandas · matplotlib · seaborn · SQL · SQLite ·
+Excel · SUMIF · COUNTIF · AVERAGEIF · Power Query
 
 ## Project Status
-Week 1 complete — foundations, EDA, data cleaning done
-Week 2 starting — delivery performance deep dive
+Week 1 complete — foundations, EDA, data cleaning
+Week 2 complete — delivery analysis, review correlation,
+payment methods, geographic breakdown
+Week 3 starting — advanced visualisation, Power BI dashboard
 
 ## Dataset
 [Brazilian E-Commerce Public Dataset — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
@@ -28,3 +45,9 @@ Week 2 starting — delivery performance deep dive
 ## Screenshots
 ![Top 10 Categories](images/top10_categories.png)
 ![Delivery Delay Distribution](images/delivery_delay_dist.png)
+![Delivery by Category](images/delivery_by_category.png)
+![Late % by Category](images/late_pct_by_category.png)
+![Review vs Delay](images/delay_vs_review.png)
+![Review by Delay Bucket](images/review_by_delay_bucket.png)
+![Payment Analysis](images/payment_analysis.png)
+![Revenue by State](images/revenue_by_state.png)
