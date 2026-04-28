@@ -29,7 +29,7 @@ def load_data():
     )
     return orders, reviews, states
 orders, reviews, states = load_data()
-st.write(orders.columns.tolist())  # temporary debug line
+
 
 # ── Sidebar ───────────────────────────────────────────
 st.sidebar.title("🔍 Filters")
