@@ -22,8 +22,8 @@ def load_data():
             'order_estimated_delivery_date'
         ]
     )
-    reviews = pd.read_csv(base + 'reviews_with_delay.csv')
-    states = pd.read_csv(base + 'state_revenue.csv')
+    reviews = pd.read_csv('Streamlit_app/data/reviews_with_delay.csv')
+    states = pd.read_csv('Streamlit_app/data/state_revenue.csv')
     return orders, reviews, states
 
 orders, reviews, states = load_data()
