@@ -51,3 +51,5 @@ Week 3 starting — advanced visualisation, Power BI dashboard
 ![Review by Delay Bucket](images/review_by_delay_bucket.png)
 ![Payment Analysis](images/payment_analysis.png)
 ![Revenue by State](images/revenue_by_state.png)
+![Power BI Dashboard](images/powerbi_page1.png)
+![Delivery Performance](images/powerbi_delivery.png)
