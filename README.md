@@ -49,6 +49,9 @@ Week 4 in progress — Streamlit app, advanced SQL
 ## Dataset
 [Brazilian E-Commerce Public Dataset — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
+## Live Demo
+🚀 [Olist Dashboard — Live App] - https://olist-ecommerce-analysis-nk9hu3towfh2i2thukjhfz.streamlit.app/
+
 ## Screenshots
 ![Top 10 Categories](images/top10_categories.png)
 ![Delivery Delay Distribution](images/delivery_delay_dist.png)
@@ -60,3 +63,4 @@ Week 4 in progress — Streamlit app, advanced SQL
 ![Correlation Heatmap](images/correlation_heatmap.png)
 ![Power BI Dashboard](images/powerbi_page1.png)
 ![Delivery Performance](images/powerbi_delivery.png)
+![Streamlit Dashboard](images/streamlit_dashboard.png)
