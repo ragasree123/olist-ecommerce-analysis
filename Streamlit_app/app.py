@@ -28,6 +28,8 @@ def load_data():
         'Streamlit_app/data/state_revenue.csv'
     )
     return orders, reviews, states
+orders, reviews, states = load_data()
+st.write(orders.columns.tolist())  # temporary debug line
 
 # ── Sidebar ───────────────────────────────────────────
 st.sidebar.title("🔍 Filters")
@@ -37,6 +39,7 @@ selected_states = st.sidebar.multiselect(
     options=sorted(orders['customer_state'].dropna().unique()),
     default=[]
 )
+
 
 selected_categories = st.sidebar.multiselect(
     "Select Category",
