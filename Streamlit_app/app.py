@@ -13,20 +13,21 @@ st.set_page_config(
 # ── Load data ─────────────────────────────────────────
 @st.cache_data
 def load_data():
-    base = r'E:\NILE TECH\DataAnalyst90Days\Phase1_Olist\powerbi_data\\'
     orders = pd.read_csv(
-        base + 'orders_delivered.csv',
+        'Streamlit_app/data/orders_delivered.csv',
         parse_dates=[
             'order_purchase_timestamp',
             'order_delivered_customer_date',
             'order_estimated_delivery_date'
         ]
     )
-    reviews = pd.read_csv('Streamlit_app/data/reviews_with_delay.csv')
-    states = pd.read_csv('Streamlit_app/data/state_revenue.csv')
+    reviews = pd.read_csv(
+        'Streamlit_app/data/reviews_with_delay.csv'
+    )
+    states = pd.read_csv(
+        'Streamlit_app/data/state_revenue.csv'
+    )
     return orders, reviews, states
-
-orders, reviews, states = load_data()
 
 # ── Sidebar ───────────────────────────────────────────
 st.sidebar.title("🔍 Filters")
